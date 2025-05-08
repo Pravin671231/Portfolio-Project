@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rbga(255, 255, 255, 0);
+}
+
+/***************** Navbar ***************/
+
+/*----------------- Menu Link -----------------*/
+nav a.nav-link {
+  /* font-weight: 500; */
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin: 0 12px;
+  border-bottom: 3px solid var(--primary-dark);
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-bottom: 3px solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid var(--primary-orange);
+
+}
